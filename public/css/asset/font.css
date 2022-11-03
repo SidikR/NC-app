@@ -1,0 +1,8 @@
+h1{
+    font-family: var(--headingfont);
+    font-size: 64px;
+}
+p{
+    font-family: var(--mainfont);
+    font-size: 18px;
+}

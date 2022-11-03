@@ -1,0 +1,17 @@
+.main-wrapper{
+    background-image: url('../../assets/Hero-section.jpg');
+}
+.main-form{
+    width: 80%;
+}
+
+.form-control:hover {
+    transform: scale(1.02);
+    box-shadow:5px 5px 5px #ccc;
+  }
+
+@media (min-width: 992px) { 
+    .main-form{
+        width: 30%;
+    }
+}

@@ -1,0 +1,10 @@
+:root {
+    /*color*/
+    --primarycolor: #3C8786;
+    --secondarycolor: #4F9CF9;
+    --white: #ffffff;
+
+    /*font*/
+    --mainfont:'Inter', sans-serif;
+    --headingfont:'DM Sans', sans-serif;
+}

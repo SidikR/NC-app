@@ -1,0 +1,105 @@
+body{
+    font-family: var(--mainfont);
+    overflow-x: hidden;
+}
+
+.heading{
+    font-family: var(--headingfont);
+}
+
+.container-1{
+    background-color: #348385;
+    background-image: url('../../assets/Background-1.png');
+}
+
+.container-3{
+    background-color: #348385;
+}
+
+@media (min-width:992px) {
+    .container-1{
+        height: 100vh;
+    }
+    .main1{
+        margin-top: 0px;
+        width: 80%;
+    }
+}
+.main1{
+    margin-top: 100px;
+    width: 80%;
+}
+.landingpage-img-1{
+    max-width: 881px;
+    max-height: 582px;
+}
+
+.landingpage-img-2{
+    max-width: 453px;
+    max-height: 551px;
+}
+
+.btn-primary{
+    background-color: #61C6C9 !important;
+    border: none !important;
+}
+
+.btn-secondary{
+    border: none !important;
+}
+
+.Beranda{
+    font-family: 'DM Sans';
+    margin-right: 2%;
+}
+
+.Kelas{
+    font-family: 'DM Sans';
+    size: 18cm;
+    margin-left: 2%;
+}
+
+.Kontak{
+    font-family: 'DM Sans';
+    margin-left: 2%;
+    margin-right: auto;
+}
+
+.image-1{
+    height: 23%;
+    width: 33%;
+    float: left;
+    margin-left: 14%;
+    margin-top: 15%;
+}
+
+.image-2{
+    height: 60%;
+    width: 45%;
+    float: right;
+    margin-left: auto;
+    margin-top: 8%;
+    margin-right: 8%;
+}
+
+.Button{
+    margin-left: 14%;
+    margin-top: 3%;
+    padding: 1%;
+    background-color: #4F9CF9 ;
+    font-family: 'Inter';
+    border-radius: 8px;
+    border: none;
+    color: white;
+}
+
+
+.image-3{
+    margin-left: 14%;
+    margin-right: 23%;
+    margin-bottom: 7%;
+}
+.image-4{
+    margin-left: auto;
+    margin-top: 5%;
+}

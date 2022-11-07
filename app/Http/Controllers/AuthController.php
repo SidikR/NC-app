@@ -10,7 +10,7 @@ class AuthController extends Controller
     public function landing()
     {
         return view('landing.landing', [
-            "title" => "Masuk"
+            "title" => "Lp"
         ]);
     }
 

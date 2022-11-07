@@ -51,6 +51,7 @@ body{
 .Beranda{
     font-family: 'DM Sans';
     margin-right: 2%;
+    color: #4F9CF9;
 }
 
 .Kelas{
@@ -72,6 +73,10 @@ body{
     margin-left: 14%;
     margin-top: 15%;
 }
+
+.navbar-dark .navbar-nav .nav-link{
+    color: #348385;
+  }
 
 .image-2{
     height: 60%;

@@ -9,4 +9,4 @@
 <link rel="stylesheet" href="{{asset('css/asset/font.css')}}">
 <link rel="stylesheet" href="{{asset('css/asset/color.css')}}">
 <link rel="stylesheet" href="{{asset('css/sidebar/sidebar.css')}}">
-<link rel="stylesheet" href="{{ asset('css/layout/main-auth.css') }}">
+<link rel="stylesheet" href="{{asset('css/layout/main-auth.css')}}">

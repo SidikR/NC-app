@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
@@ -11,17 +11,25 @@
     @stack('style')
 
     {{-- <title>{{ $title }} | Absensi App</title> --}}
-</head>
+{{-- </head>
 
 <body>
 
     {{-- <x-toast-container /> --}}
 
-    @yield('container')
+    {{-- @yield('container')
 
     @include('partials.scripts')
     @stack('script')
 
-</body>
+</body> --}}
+{{-- 
+</html> --}}
 
-</html>
+@extends('layouts.base')
+
+@section('base')
+
+@yield('content')
+
+@endsection

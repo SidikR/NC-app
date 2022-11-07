@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
        @include('global.import')
-        <title>Document</title>
+        <title>Landing Page</title>
     </head>
     <body> 
         @include('partials/navbar.lpnavbar')

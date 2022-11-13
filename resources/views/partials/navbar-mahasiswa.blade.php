@@ -12,7 +12,7 @@
                     <a class="nav-link active" aria-current="page" href="#">Beranda</a>
                   </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Kelas</a>
+                    <a class="nav-link active" aria-current="page" href="#Home">Kelas</a>
                   </li>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Kontak</a>
@@ -31,6 +31,6 @@
         </div>
       </nav>
       
-
+      
       {{-- <a class="   py-3 px-3 " href="">Absensi App</a> --}}
 </header>

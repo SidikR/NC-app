@@ -13,7 +13,7 @@
                 <a class="nav-link {{ request()->routeIs('positions.*') ? 'active' : '' }}"
                     href="{{ route('positions.index') }}">
                     <span data-feather="tag" class="align-text-bottom"></span>
-                    Jabatan / Posisi
+                    Data Kelas
                 </a>
             </li>
             <li class="nav-item">

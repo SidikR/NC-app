@@ -8,15 +8,17 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-              <li class="Beranda">
-                <a class="nav-link"  href="#">Beranda</a>
-              </li>
-              <li class="Kelas">
-                <a class="nav-link" href="#">Kelas</a>
-              </li>
-              <li class="Kontak">
-                <a class="nav-link" href="#">Kontak</a>
-              </li>
+              <div class="collapse navbar-collapse">
+                <li class="Beranda">
+                  <a class="nav-link"  href="#">Beranda</a>
+                </li>
+                <li class="Kelas">
+                  <a class="nav-link" href="#">Kelas</a>
+                </li>
+                <li class="Kontak">
+                  <a class="nav-link" href="#">Kontak</a>
+                </li>
+              </div>
               <li>
                 <a class="btn btn-primary ms-5 me-1"  href="login" role="button">Login</a>
               </li>

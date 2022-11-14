@@ -9,39 +9,67 @@
                     Dashboard
                 </a>
             </li>
-            <li class="nav-item">
+            {{-- <li class="nav-item">
                 <a class="nav-link {{ request()->routeIs('positions.*') ? 'active' : '' }}"
                     href="{{ route('positions.index') }}">
                     <span data-feather="tag" class="align-text-bottom"></span>
                     Data Kelas
                 </a>
-            </li>
-            <li class="nav-item">
+            </li> --}}
+
+              <li class="nav-item">
+                <a class="nav-link " data-bs-toggle="collapse" data-bs-target="#home-collapse">
+                    <span data-feather="clipboard" class="align-text-bottom"></span>
+                    Master Data
+                </a>
+                <div class="collapse show" id="home-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li>
+                        <a class="nav-link {{ request()->routeIs('employees.*') ? 'active' : '' }}"
+                        href="{{ route('employees.index') }}">
+                        <span data-feather="users" class="align-text-bottom"></span>
+                        Data Mahasiswa</a>
+                      </li>
+                      <li>
+                        <a class="nav-link" data-bs-toggle="collapse" aria-expanded="true">
+                        <span data-feather="users" class="align-text-bottom"></span>
+                        Data Mentor</a>
+                      </li>
+                      <li>
+                        <a class="nav-link" data-bs-toggle="collapse" aria-expanded="true">
+                        <span data-feather="users" class="align-text-bottom"></span>
+                        Data Kelas</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+            
+            {{-- <li class="nav-item">
                 <a class="nav-link {{ request()->routeIs('employees.*') ? 'active' : '' }}"
                     href="{{ route('employees.index') }}">
                     <span data-feather="users" class="align-text-bottom"></span>
                     Karyawaan
                 </a>
-            </li>
+            </li> --}}
             <li class="nav-item">
                 <a class="nav-link {{ request()->routeIs('holidays.*') ? 'active' : '' }}"
                     href="{{ route('holidays.index') }}">
                     <span data-feather="calendar" class="align-text-bottom"></span>
-                    Hari Libur
+                    Pembayaran
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link {{ request()->routeIs('attendances.*') ? 'active' : '' }}"
                     href="{{ route('attendances.index') }}">
                     <span data-feather="clipboard" class="align-text-bottom"></span>
-                    Absensi
+                    FAQ
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link {{ request()->routeIs('presences.*') ? 'active' : '' }}"
                     href="{{ route('presences.index') }}">
                     <span data-feather="clipboard" class="align-text-bottom"></span>
-                    Data Kehadiran
+                    Testimoni
                 </a>
             </li>
             @endif

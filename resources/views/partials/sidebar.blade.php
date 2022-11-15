@@ -9,13 +9,13 @@
                     Dashboard
                 </a>
             </li>
-            {{-- <li class="nav-item">
+            <!-- {{-- <li class="nav-item">
                 <a class="nav-link {{ request()->routeIs('positions.*') ? 'active' : '' }}"
                     href="{{ route('positions.index') }}">
                     <span data-feather="tag" class="align-text-bottom"></span>
-                    Jabatan / Posisi
+                    Data Kelas
                 </a>
-            </li> --}}
+            </li> --}} -->
 
               <li class="nav-item">
                 <a class="nav-link " data-bs-toggle="collapse" data-bs-target="#home-collapse">
@@ -28,15 +28,11 @@
                         <a class="nav-link {{ request()->routeIs('employees.*') ? 'active' : '' }}"
                         href="{{ route('employees.index') }}">
                         <span data-feather="users" class="align-text-bottom"></span>
-                        Data Mahasiswa</a>
+                        Data Mahasiswa & Mentor</a>
                       </li>
                       <li>
-                        <a class="nav-link" data-bs-toggle="collapse" aria-expanded="true">
-                        <span data-feather="users" class="align-text-bottom"></span>
-                        Data Mentor</a>
-                      </li>
-                      <li>
-                        <a class="nav-link" data-bs-toggle="collapse" aria-expanded="true">
+                        <a class="nav-link {{ request()->routeIs('positions.*') ? 'active' : '' }}"
+                        href="{{ route('positions.index') }}">
                         <span data-feather="users" class="align-text-bottom"></span>
                         Data Kelas</a>
                       </li>

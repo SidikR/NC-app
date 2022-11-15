@@ -12,7 +12,7 @@
 
         @foreach ($positions as $i => $position)
         <div class="mb-3 position-relative">
-            <x-form-label id="name{{ $i }}" label='Nama Jabatan {{ $i + 1 }}' />
+            <x-form-label id="name{{ $i }}" label='Kelas {{ $i + 1 }}' />
             <div class="d-flex align-items-center">
                 <x-form-input id="name{{ $i }}" name="name{{ $i }}" wire:model.defer="positions.{{ $i }}.name" />
                 @if ($i > 0)

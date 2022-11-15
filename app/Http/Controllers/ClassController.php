@@ -10,13 +10,13 @@ class EmployeeController extends Controller
     public function index()
     {
         return view('employees.index', [
-            "title" => "Data Mahasiswa dan Mentor"
+            "title" => "Data Kelas"
         ]);
     }
 
     public function create()
     {
-        return view('employees.create', [
+        return view('Classes.create', [
             "title" => "Tambah Data "
         ]);
     }

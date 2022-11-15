@@ -10,7 +10,7 @@ class HolidayController extends Controller
     public function index()
     {
         return view('holidays.index', [
-            "title" => "Hari Libur"
+            "title" => "Pembayaran"
         ]);
     }
 

@@ -8,6 +8,7 @@ use App\Http\Controllers\HolidayController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PositionController;
 use App\Http\Controllers\PresenceController;
+use App\Http\Controllers\ClassController;
 use Illuminate\Support\Facades\Route;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
@@ -38,6 +39,9 @@ Route::middleware('auth')->group(function () {
         // attendances (absensi)
         Route::resource('/attendances', AttendanceController::class)->only(['index', 'create']);
         Route::get('/attendances/edit', [AttendanceController::class, 'edit'])->name('attendances.edit');
+        // Class (Kelas)
+        Route::resource('/Class', AttendanceController::class)->only(['index', 'create']);
+        Route::get('/Class/edit', [AttendanceController::class, 'edit'])->name('Class.edit');
 
         // presences (kehadiran)
         Route::resource('/presences', PresenceController::class)->only(['index']);

@@ -28,12 +28,7 @@
                         <a class="nav-link {{ request()->routeIs('employees.*') ? 'active' : '' }}"
                         href="{{ route('employees.index') }}">
                         <span data-feather="users" class="align-text-bottom"></span>
-                        Data Mahasiswa</a>
-                      </li>
-                      <li>
-                        <a class="nav-link" data-bs-toggle="collapse" aria-expanded="true">
-                        <span data-feather="users" class="align-text-bottom"></span>
-                        Data Mentor</a>
+                        Data Mahasiswa & Mentor</a>
                       </li>
                       <li>
                         <a class="nav-link" data-bs-toggle="collapse" aria-expanded="true">

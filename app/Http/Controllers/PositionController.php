@@ -10,14 +10,14 @@ class PositionController extends Controller
     public function index()
     {
         return view('positions.index', [
-            "title" => "Jabatan / Posisi"
+            "title" => "Data Kelas"
         ]);
     }
 
     public function create()
     {
         return view('positions.create', [
-            "title" => "Tambah Data Jabatan / Posisi"
+            "title" => "Tambah JKelas"
         ]);
     }
 
@@ -31,7 +31,7 @@ class PositionController extends Controller
         $positions = Position::query()->whereIn('id', $ids)->get();
 
         return view('positions.edit', [
-            "title" => "Edit Data Jabatan / Posisi",
+            "title" => "Edit Data Kelas",
             "positions" => $positions
         ]);
     }

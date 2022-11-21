@@ -2,40 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Position;
 use App\Models\User;
 use Illuminate\Http\Request;
 
-class EmployeeController extends Controller
+class DashboardController extends Controller
 {
     public function index()
     {
-        return view('employees.index', [
-            "title" => "Data Kelas"
-        ]);
-    }
-
-    public function create()
-    {
-        return view('Classes.create', [
-            "title" => "Tambah Data "
-        ]);
-    }
-
-    public function edit()
-    {
-        $ids = request('ids');
-        if (!$ids)
-            return redirect()->back();
-        $ids = explode('-', $ids);
-
-        // ambil data user yang hanya memiliki User::USER_ROLE_ID / role untuk karyawaan
-        $employees = User::query()
-            ->whereIn('id', $ids)
-            ->get();
-
-        return view('employees.edit', [
-            "title" => "Edit Data ",
-            "employees" => $employees
+        return view('Kelas.index', [
+            "title" => "Kelas",
+            "positionCount" => Position::count(),
+            "userCount" => User::count()
         ]);
     }
 }

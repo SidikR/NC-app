@@ -6,7 +6,10 @@
         <div class="col-md-3">
             <div class="card shadow">
                 <div class="card-body">
-                    <h6 class="fs-6 fw-light">Data Kelas</h6>
+                <a href="{{ route('positions.index') }}" class="btn btn-outline-secondary">
+                     <span data-feather="plus-circle" class="align-text-bottom me-1"></span>
+                        Data Kelas
+                 </a>
                     <h4 class="fw-bold">{{ $positionCount }}</h4>
                 </div>
             </div>
@@ -14,7 +17,10 @@
         <div class="col-md-3">
             <div class="card shadow">
                 <div class="card-body">
-                    <h6 class="fs-6 fw-light">Data Pegawai</h6>
+                    <a href="{{ route('positions.index') }}" class="btn btn-outline-secondary">
+                     <span data-feather="plus-circle" class="align-text-bottom me-1"></span>
+                        Data Mahasiswa
+                     </a>
                     <h4 class="fw-bold">{{ $userCount }}</h4>
                 </div>
             </div>

@@ -165,31 +165,36 @@ final class HolidayTable extends PowerGridComponent
     public function columns(): array
     {
         return [
-            Column::make('ID', 'id')
+            Column::make('NO', 'id')
                 ->searchable()
                 ->sortable(),
 
-            Column::make('Nama Hari Libur', 'title')
+            Column::make('Email Mahasiswa', 'title')
                 ->searchable()
                 ->makeInputText('title')
                 ->sortable(),
 
-            Column::make('Keterangan', 'description')
+            Column::make('Nama Mahasiswa', 'description')
                 ->searchable()
                 ->makeInputText('description')
                 ->sortable(),
 
-            Column::make('Tanggal Libur', 'holiday_date')
+            Column::make('Paket', 'title')
+                ->searchable()
+                ->makeInputText('title')
+                ->sortable(),
+
+            Column::make('Paket Kelas', 'holiday_date')
                 ->hidden(),
 
-            Column::make('Tanggal Libur', 'holiday_date_formatted', 'holiday_date')
+            Column::make('Jumlah', 'holiday_date_formatted', 'holiday_date')
                 ->makeInputDatePicker()
                 ->searchable(),
 
             Column::make('Created at', 'created_at')
                 ->hidden(),
 
-            Column::make('Created at', 'created_at_formatted', 'created_at')
+            Column::make('Tindakan', 'created_at_formatted', 'created_at')
                 ->makeInputDatePicker()
                 ->searchable()
         ];

@@ -9,7 +9,8 @@
     <div>
         <a href="{{ route('holidays.create') }}" class="btn btn-sm btn-primary">
             <span data-feather="plus-circle" class="align-text-bottom me-1"></span>
-            Tambah Data
+            Tambah Data 
+        </a>
     </div>
 </div>
 @endsection
